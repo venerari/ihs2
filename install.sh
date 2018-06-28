@@ -22,11 +22,11 @@ echo "Downloading IBM HTTP Server file"
 
 wget $appzipfile  http://192.168.3.111/$appzipfile
 
-unzip /$appdirname/IBM/$appzipfile
+unzip /$appdirname/IBM/$appzipfile 2>&1 temp.log
 
 chmod +775 -R /$appdirname
 
-sudo –iu $username
+su - $username
 
 echo "Starting IHS Server"
 
