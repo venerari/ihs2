@@ -30,7 +30,8 @@ su - $username
 
 echo "Starting IHS Server"
 
-sudo cp /$appdirname/IBM/HTTPServer/lib* /usr/lib64
+#sudo cp /$appdirname/IBM/HTTPServer/lib* /usr/lib64
+link /sibapp_01/IBM/HTTPServer/lib/libpcre.so.0 /usr/lib64/libpcre.so.0
 
 sudo /$appdirname/IBM/HTTPServer/bin/apachectl start
 
