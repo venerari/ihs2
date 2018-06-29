@@ -15,7 +15,7 @@ useradd -m -g $groupname -d $userhome -s /bin/bash $username
 
 wget $appzipfile  http://192.168.3.111/$appzipfile
 
-unzip /$appdirname/IBM/$appzipfile 2>&1 /tmp/temp.log
+unzip /$appdirname/IBM/$appzipfile
 
 chmod 0775 -R /$appdirname
 chown -R $username:$groupname /$appdirname
