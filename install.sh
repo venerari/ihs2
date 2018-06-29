@@ -32,6 +32,8 @@ echo "Starting IHS Server"
 
 #sudo cp /$appdirname/IBM/HTTPServer/lib* /usr/lib64
 link /sibapp_01/IBM/HTTPServer/lib/libpcre.so.0 /usr/lib64/libpcre.so.0
+link /sibapp_01/IBM/HTTPServer/lib/libaprutil-1.so.0 /usr/lib64/libaprutil-1.so.0
+ link /sibapp_01/IBM/HTTPServer/lib/libapr-1.so.0 /usr/lib64/libapr-1.so.0
 
 sudo /$appdirname/IBM/HTTPServer/bin/apachectl start
 
