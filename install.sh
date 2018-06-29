@@ -24,7 +24,7 @@ wget $appzipfile  http://192.168.3.111/$appzipfile
 
 unzip /$appdirname/IBM/$appzipfile 2>&1 temp.log
 
-chmod +775 -R /$appdirname
+chmod 0775 -R /$appdirname
 
 su - $username
 
